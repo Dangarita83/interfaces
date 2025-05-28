@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>MiPortal UNAB - Bienvenido</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <img src="LogoMiPortalU-acc.png" alt="Logo MiPortalU" class="portal-logo">
+    <h1>MiPortal UNAB</h1>
+
+    <!-- Icono de perfil con menú desplegable -->
+  <div class="perfil-container">
+      <img src="icono-perfil.png" alt="Perfil" class="perfil-icon" id="perfil-icon">
+      <div class="perfil-menu" id="perfil-menu">
+        <p id="usuario-nombre"></p>
+        <a href="noticias.html">Noticias</a>
+        <a href="horaslibres.html">Mis horas libres</a>
+        <a href="mapa.html">Mapa interactivo</a>
+        <a href="soporte.html">Soporte</a>
+        <a href="cursos.html">Mis cursos</a>
+        <a href="asistencia.html">Asistencia</a>
+        <a href="#" id="cerrar-sesion">Cerrar Sesión</a>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <h2 id="mensaje-bienvenida"></h2>
+    
+
+    <!-- Sección superior: Aparta tu cupo ahora + Matrículas e Inscripciones -->
+    <section class="reserva-container">
+      <div class="reserva-izquierda">
+        <h2>Matrículas e Inscripciones Abiertas</h2>
+        <p>¡Inscríbete ahora y da el primer paso hacia tu futuro! Tenemos diversas oportunidades académicas esperándote.</p>
+      </div>
+      <div class="reserva-derecha">
+        <h2 class="reserva-title">APARTA TU CUPO AHORA</h2>
+        <p>¡El momento es ahora! Asegura tu lugar y empieza a construir tu camino hacia el éxito.</p>
+      </div>
+    </section>
+
+<!-- Sección de los creadores del sitio web -->
+<section class="creadores-container">
+  <div class="creadores-imagenes">
+    <div class="creador-box">
+      <img src="creador1.png" alt="Creador 1" class="creador-imagen">
+      <p class="creador-nombre">Juan David Bernal</p> <!-- Nombre debajo de la imagen -->
+    </div>
+    <div class="creador-box">
+      <img src="creador2.jpg" alt="Creador 2" class="creador-imagen">
+      <p class="creador-nombre">David Angarita</p> <!-- Nombre debajo de la imagen -->
+    </div>
+  </div>
+  <div class="creadores-texto">
+    <h2>Los Creadores de MiPortal UNAB</h2>
+    <p>Este proyecto fue desarrollado por un equipo apasionado por la tecnología y la educación. Nos esforzamos por ofrecer una plataforma intuitiva y eficiente para todos los estudiantes.</p>
+  </div>
+</section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

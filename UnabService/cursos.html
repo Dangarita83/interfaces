@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mis Cursos - MiPortal UNAB</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Mis Cursos</h1>
+  </header>
+
+  <main class="cursos-container">
+    <section class="semestres-container">
+      <label for="semestre-select">Selecciona un semestre:</label>
+      <select id="semestre-select">
+        <option value="1">1° Semestre</option>
+        <option value="2">2° Semestre</option>
+        <option value="3">3° Semestre</option>
+        <option value="4">4° Semestre</option>
+        <option value="5">5° Semestre</option>
+        <option value="6">6° Semestre</option>
+        <option value="7">7° Semestre</option>
+        <option value="8">8° Semestre</option>
+        <option value="9">9° Semestre</option>
+      </select>
+    </section>
+
+    <p id="mensaje-semestre" class="mensaje-semestre"></p>
+
+    <table class="cursos-tabla">
+      <thead>
+        <tr>
+          <th>Curso</th>
+          <th>Créditos</th>
+          <th>Salón</th>
+          <th>Horario</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-cursos">
+        <!-- Los cursos se agregarán dinámicamente desde script.js -->
+      </tbody>
+    </table>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

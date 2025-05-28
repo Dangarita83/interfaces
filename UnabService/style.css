@@ -1,0 +1,817 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+  
+.header {
+    background-color: #cc0000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portal-logo {
+    height: 60px; /* Asegurar que el tamaño sea adecuado */
+    margin-right: 20px; /* Espacio entre el logo y el texto */
+}
+  
+
+
+/* Contenedor del perfil */
+.perfil-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilo del icono de perfil */
+.perfil-icon {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid white; /* Borde blanco */
+    background-color: #cc0000; /* Fondo rojo UNAB */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.perfil-icon:hover {
+    transform: scale(1.1); /* Efecto de zoom */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6); /* Sombra blanca */
+}
+
+/* Menú desplegable */
+.perfil-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: left;
+    width: 150px;
+}
+
+.perfil-menu p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.perfil-menu a {
+    display: block;
+    padding: 8px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.perfil-menu a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Clase activa para mostrar el menú */
+.perfil-menu.activo {
+    display: block;
+}
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+  
+.boton {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    background-color: #cc0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+  
+.boton:hover {
+    background-color: #a30000;
+}
+  
+.login-body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.login-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+  
+.login-container input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+  
+.login-container button {
+    background-color: #cc0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+  
+.login-container button:hover {
+    background-color: #a30000;
+}
+  
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+
+/* Contenedor superior */
+.reserva-container {
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+    align-items: center;
+    padding: 40px;
+    background-color: #cc0000;
+    color: white;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+}
+
+/* Texto de "Aparta tu cupo ahora" centrado */
+.reserva-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: yellow;
+    letter-spacing: 3px;
+    text-align: center;
+    width: 100%; /* Se asegura que ocupe todo el espacio */
+}
+
+.reserva-izquierda {
+    width: 50%;
+    text-align: left;
+}
+
+.reserva-izquierda h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.reserva-izquierda p {
+    font-size: 18px;
+    max-width: 400px;
+}
+
+.reserva-derecha {
+    width: 50%;
+    text-align: center;
+}
+
+.reserva-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: yellow;
+    letter-spacing: 3px; /* Separación de letras */
+}
+
+/* Estilo de la sección "Quiénes somos" */
+.quienes-somos {
+    padding: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.quienes-somos h2 {
+    color: #cc0000;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.quienes-somos p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+
+
+/* Estilo de la sección roja "Aparta tu cupo ahora" */
+.reserva-cupo {
+    background-color: #cc0000;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.reserva-cupo h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.reserva-cupo p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.boton-reserva {
+    background-color: white;
+    color: #cc0000;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.boton-reserva:hover {
+    background-color: #ffcccc;
+}
+
+/* Ajustes al encabezado */
+.header {
+    background-color: #cc0000;
+    color: white;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+}
+
+/* Icono de perfil con diseño mejorado */
+.perfil-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.perfil-icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 3px solid white; /* Bordes blancos */
+    background-color: #cc0000; /* Fondo rojo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.perfil-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.5);
+}
+
+/* Menú desplegable del perfil */
+.perfil-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: left;
+    width: 180px;
+}
+
+.perfil-menu p {
+    font-weight: bold;
+    color: #cc0000;
+    margin-bottom: 10px;
+}
+
+.perfil-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.perfil-menu a:hover {
+    background-color: #f4f4f4;
+}
+
+.perfil-menu.activo {
+    display: block;
+}
+
+
+/* Contenedor de noticias */
+.noticias-container {
+    padding: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Noticia destacada grande */
+.noticia-destacada {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.noticia-destacada img {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.noticia-destacada h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #cc0000;
+    margin-top: 15px;
+}
+
+.noticia-destacada p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Lista de noticias en rectángulos */
+.lista-noticias {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.noticia-box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.noticia-box h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #cc0000;
+}
+
+.noticia-box p {
+    font-size: 16px;
+    color: #333;
+}
+
+
+
+/* Contenedor de la página de perfil */
+.perfil-main {
+    padding: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Mensaje de bienvenida */
+#mensaje-bienvenida {
+    font-size: 24px;
+    font-weight: bold;
+    color: #cc0000;
+    margin-bottom: 30px;
+}
+
+/* Secciones del perfil */
+.perfil-secciones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.perfil-box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.perfil-box h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #cc0000;
+}
+
+.perfil-box p {
+    font-size: 16px;
+    color: #333;
+}
+
+
+.creadores-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.creadores-imagenes {
+    display: flex;
+    gap: 15px;
+}
+
+.creador-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    height: 180px; /* Aumentamos altura para incluir el nombre */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.creador-imagen {
+    width: 100%;
+    height: 150px; /* Ajustamos la altura de la imagen */
+    object-fit: cover;
+}
+
+
+.creadores-texto {
+    max-width: 400px;
+}
+
+.creadores-texto h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #cc0000;
+}
+
+.creadores-texto p {
+    font-size: 16px;
+    color: #333;
+}
+.creador-nombre {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #333; /* Aseguramos que el texto tenga color visible */
+}
+
+
+
+.mapa-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.mapa {
+    position: relative;
+    width: 800px;
+}
+
+.mapa-imagen {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.punto {
+    width: 20px;
+    height: 20px;
+    background-color: transparent; /* Ahora es invisible */
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+}
+
+.punto:hover::after {
+    content: attr(data-info);
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+.popup {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+}
+
+
+.cursos-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.cursos-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cursos-tabla th, .cursos-tabla td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.cursos-tabla th {
+    background-color: #cc0000;
+    color: white;
+}
+
+.cursos-tabla tr:hover {
+    background-color: #f2f2f2;
+}
+
+
+.horaslibres-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.horas-totales, .historial-asistencia {
+    background-color: #cc0000; /* Rojo */
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.horas-totales h2, .historial-asistencia h2 {
+    margin-bottom: 10px;
+}
+
+#horas-totales-contenedor {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#lista-horaslibres {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-horaslibres li {
+    background-color: white;
+    color: #cc0000;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.soporte-container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #cc0000; /* Rojo */
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: white;
+    color: #cc0000;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+.asistencia-container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #cc0000; /* Rojo */
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: white;
+    color: #cc0000;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+.semestres-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#semestre-select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+.mensaje-semestre {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.cursos-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cursos-tabla th, .cursos-tabla td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.cursos-tabla th {
+    background-color: #cc0000;
+    color: white;
+}
+
+.cursos-tabla tr:hover {
+    background-color: #f2f2f2;
+}
+
+
+/* 🎯 Fondo elegante */
+.login-body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #f0f0f0, #dcdcdc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 🎯 Contenedor dividido en dos secciones */
+.login-container {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* 🎯 Sección izquierda con el formulario */
+.formulario {
+    flex: 1;
+    padding: 40px;
+    text-align: left;
+}
+
+/* 🎯 Sección derecha con imagen llamativa */
+.imagen-login {
+    flex: 1.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('imagen-destacada.jpg') center/cover no-repeat;
+}
+
+/* 🎯 Título llamativo */
+.formulario h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* 🎯 Campos de entrada */
+.formulario input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* 🎯 Botón moderno */
+.formulario button {
+    background-color: #cc0000;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #a70101;
+}
+
+/* 🎯 Ajuste para que la imagen no ocupe toda la pantalla */
+.imagen-login {
+    flex: 1.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-login img {
+    width: 100%;
+    max-width: 400px; /* Puedes ajustar este valor según el diseño */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
